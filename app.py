@@ -56,9 +56,10 @@ def main():
                     plt.imshow(image_data) # displaying the image
                     plt.axis("off") # disabling the axis
                     predictions = predict(image_data, model) # calling the function to do the prediction
-                    time.sleep(1)
+                    time.sleep(2)
                     st.success('Classified')
                     st.write(predictions)
 
 if(__name__ == '__main__'):
     main()
+
